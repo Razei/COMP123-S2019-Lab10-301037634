@@ -34,7 +34,7 @@
             // LabelWelcome
             // 
             this.LabelWelcome.AutoSize = true;
-            this.LabelWelcome.Location = new System.Drawing.Point(233, 65);
+            this.LabelWelcome.Location = new System.Drawing.Point(12, 9);
             this.LabelWelcome.Name = "LabelWelcome";
             this.LabelWelcome.Size = new System.Drawing.Size(299, 31);
             this.LabelWelcome.TabIndex = 0;
