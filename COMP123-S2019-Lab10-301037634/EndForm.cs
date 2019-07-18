@@ -10,23 +10,22 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_301037634
 {
-    public partial class StartForm : Form
+    public partial class EndForm : Form
     {
-        public StartForm()
+        public EndForm()
         {
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void BackButton_Click_1(object sender, EventArgs e)
         {
-            SplashTimer.Enabled = true;
+            Program.Forms[FormName.MAIN_FORM].Show();
+            this.Hide();
         }
 
-        private void SplashTimer_Tick(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
-            SplashTimer.Enabled = false;
-            Program.Forms[FormName.MAIN_FORM].Show();
-            this.Hide();        
+            Application.Exit();
         }
     }
 }
