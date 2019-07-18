@@ -33,15 +33,18 @@
             this.LabelWelcome = new System.Windows.Forms.Label();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
             this.LogoBox = new System.Windows.Forms.PictureBox();
+            this.OpacityTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelWelcome
             // 
-            this.LabelWelcome.AutoSize = true;
-            this.LabelWelcome.Location = new System.Drawing.Point(232, 9);
+            this.LabelWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelWelcome.Location = new System.Drawing.Point(250, 30);
             this.LabelWelcome.Name = "LabelWelcome";
-            this.LabelWelcome.Size = new System.Drawing.Size(299, 31);
+            this.LabelWelcome.Size = new System.Drawing.Size(300, 30);
             this.LabelWelcome.TabIndex = 1;
             this.LabelWelcome.Text = "Welcome to Start Form!";
             // 
@@ -52,14 +55,19 @@
             // 
             // LogoBox
             // 
+            this.LogoBox.BackColor = System.Drawing.Color.Transparent;
             this.LogoBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoBox.Image")));
             this.LogoBox.InitialImage = null;
-            this.LogoBox.Location = new System.Drawing.Point(296, 191);
+            this.LogoBox.Location = new System.Drawing.Point(200, 100);
             this.LogoBox.Name = "LogoBox";
-            this.LogoBox.Size = new System.Drawing.Size(200, 200);
+            this.LogoBox.Size = new System.Drawing.Size(400, 400);
             this.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LogoBox.TabIndex = 2;
             this.LogoBox.TabStop = false;
+            // 
+            // OpacityTimer
+            // 
+            this.OpacityTimer.Tick += new System.EventHandler(this.OpactiyTimer_Tick);
             // 
             // StartForm
             // 
@@ -81,7 +89,6 @@
             this.Load += new System.EventHandler(this.StartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -90,5 +97,6 @@
         private System.Windows.Forms.Label LabelWelcome;
         private System.Windows.Forms.Timer SplashTimer;
         private System.Windows.Forms.PictureBox LogoBox;
+        private System.Windows.Forms.Timer OpacityTimer;
     }
 }

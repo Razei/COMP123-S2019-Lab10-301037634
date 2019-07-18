@@ -33,5 +33,10 @@ namespace COMP123_S2019_Lab10_301037634
             Program.Forms[FormName.START_FORM].Show();
             this.Hide();
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

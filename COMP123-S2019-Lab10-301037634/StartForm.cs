@@ -28,5 +28,10 @@ namespace COMP123_S2019_Lab10_301037634
             Program.Forms[FormName.MAIN_FORM].Show();
             this.Hide();        
         }
+
+        private void OpactiyTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
